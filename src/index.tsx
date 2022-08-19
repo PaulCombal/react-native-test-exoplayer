@@ -18,3 +18,15 @@ const TestExoplayer = NativeModules.TestExoplayer  ? NativeModules.TestExoplayer
 export function multiply(a: number, b: number): Promise<number> {
   return TestExoplayer.multiply(a, b);
 }
+export function play(uri: string) {
+  return TestExoplayer.play(uri);
+}
+export function getPlayer() {
+  return TestExoplayer.getPlayer();
+}
+export function getState() {
+  return TestExoplayer.getPlaybackState();
+}
+export function getError() {
+  return TestExoplayer.getPlaybackError();
+}
